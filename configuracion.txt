@@ -1,0 +1,32 @@
+En git bash:
+
+git config --global user.name nombreUsuario
+git config --global user.email correoUsuario
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+
+En powershell como administrador:
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+Start-Service ssh-agent
+
+Crear carpeta .ssh en la carpeta del usuario del equipo
+
+En powershel sin administrador:
+ssh-add C:\Users\YOU/.ssh/id_rsa
+
+En el explorador de archivos:
+Abrir el archivo id_rsa.pub de la carpeta .ssh
+Copiar lo que tiene adentro
+
+En GitHub:
+Ir a Settings
+Luego a SSH and GPG keys
+Clic en New SSH key
+Pegar lo que copiamos antes de id_rsa.pub
+Y agregamos llave
+
+En git bash:
+ssh -T git@github.com
+ponemos yes
+Te saluda y ya quedó
