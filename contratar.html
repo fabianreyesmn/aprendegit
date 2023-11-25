@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrata Teléfono e internet</title>
+    <!-- link:css -->
+    <link rel="stylesheet" href="css/estilosContratar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/telmex.svg">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e8f9f80870.js" crossorigin="anonymous"></script>
+    <!-- Sitio Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Menú -->
+    <header class="header-index">
+        <div id="planes">
+            <ul>
+                <a href="#"><li>Hogar</li></a>
+                <a href="#"><li>Negocio</li></a>
+                <a href="#"><li>Empresa</li></a>
+            </ul>
+        </div>
+
+        <div id="atencion">
+            <a href="#">Centros de Atención Telmex - Sitios WiFi</a>
+            <p>|</p>
+            <a href="#">a-</a>
+            <a href="#">A+</a>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <div id="opciones">
+            <a href="index.html"><img src="images/telmex.svg" alt="Telmex"></a>
+            <ul>
+                <a href="#servicios"><li>Servicios</li></a>
+                <a href="#beneficios"><li>Mi Telmex</li></a>
+                <a href="paquetes.html"><li>Tienda Telmex</li></a>
+                <a href="#"><li>Asistencia</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="contratar.html"><li>Cámbiate a Telmex</li></a>
+            </ul>
+        </div>
+        <div id="soporte">
+            <p><i class="fa-regular fa-user" id="user"></i> Mi cuenta <i class="fa-solid fa-angle-down" id="down"></i></p>
+            <div class="lupa">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="formulario1-div">
+        <!-- Formulario 1 -->
+        <form action="">
+            <!-- <fieldset> Recuadro -->
+                <legend class="animate__animated animate__backInLeft" id="legend-contratar-paquete">Contratar Paquete</legend>
+                <table>
+                    <tr>
+                        <!-- Primera Fila -->
+                        <td><br>Selecciona el paquete a contratar</td>
+                        <td><br>
+                            <input type="radio" name="paquete" value="paquete-1" id="paquete-1" checked>
+                            <label for="paquete-1">Paquete 1</label>
+
+                            <input type="radio" name="paquete" value="paqute-2" id="paquete-2">
+                            <label for="paquete-2">Paquete 2</label>
+
+                            <input type="radio" name="paquete" value="paquete-3" id="paquete-3">
+                            <label for="paquete-3">Paquete 3</label>
+
+                            <input type="radio" name="paquete" value="paquete-4" id="paquete-4">
+                            <label for="paquete-4">Paquete 4</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Segunda Fila -->
+                        <td colspan="2">¿Aún no sabes cuál paquete contratar?
+                            <a href="paquetes.html" target="_blank">¡Haz click aquí!</a>     
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Tercera Fila -->
+                        <td><br>Introduce tu número celular</td>
+                        <td><br>
+                            <!-- <label for="horas-libres">Introduce tu número celular:</label> -->
+                            <input type="text" name="numero" value="+52-" id="numero">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Cuarta Fila -->
+                        <td><br>
+                            <div class="tooltip">Comprobante de Domicilio
+                                <span class="tooltip-text">Con fecha de expedición NO mayor a 3 meses.</span>
+                            </div>
+                            
+                        </td>
+                        
+                        <td><br>
+                            <!-- <label for="archivo">Selecciona tu comprobante de domicilio</label> -->
+                            <input type="file" name="archivo" id="archivo">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Quinta Fila -->
+                        <td><br>
+                            <div class="tooltip">Identificación Oficial Vigente
+                                <span class="tooltip-text">INE/IFE, Pasaporte, Cartilla del Servicio Militar.</span>
+                            </div>
+                        </td>
+
+                        <td><br>
+                            <!-- <label for="archivo">Selecciona tu comprobante de domicilio</label> -->
+                            <input type="file" name="archivo" id="archivo">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <!-- Sexta Fila -->
+                        <td colspan="2"><br>Selecciona la fecha y hora a partir en la que el técnico lo pueda visitar para la instalación</td>
+                    </tr>
+
+                    <tr>
+                        <!-- Séptima Fila -->
+                        <td>
+                            <label for="horas-libres">Hora (Formato 24 horas)</label>
+                            <input type="number" name="horas" id="horas-libres" min="1" max="24">
+                        </td>
+                        <td>
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" name="fecha" id="fecha"> <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Octava Fila -->
+                        <td colspan="2"> <br>
+                            <input type="checkbox" name="terminos" value="de-acuerdo" id="terminos">
+                            <label for="terminos">Estoy de acuerdo con el tratamiento de mis datos</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Novena Fila -->
+                        <td colspan="2" class="ultimo-borde-tabla"> 
+                            <input type="button" value="Contratar" title="¡Gracias por tu preferencia!" id="boton"> 
+                        </td>
+                    </tr>
+                </table>
+
+            <!-- </fieldset> -->
+        </form>
+    </div>
+
+    <div class="video-youtube">
+        <iframe width="250" height="127" 
+            src="https://www.youtube.com/embed/X4Fqdc8hoQ0?si=FEApWn0j77COIwCG">
+        </iframe>
+    </div>
+
+    <div class="contenedor-imagen-checo">
+        <img id="myimage" src="images/checo.jpg" alt="Sergio Michel Pérez Mendoza" width="250px" height="130">
+    </div>
+    
+    <!-- https://telmex.com/web/asistencia/hogar-conoce-los-beneficios-mi-telmex -->
+    <div class="header-1-div">
+        <header class="header-1">Conoce los beneficios Mi Telmex</header>
+    </div>
+    <div class="contenedor-div-central">
+        <div class="menu-izquierdo">
+            <header class="header-2"><i class="fa-solid fa-file-lines"></i>&nbsp;&nbsp;&nbsp;Artículos relacionados</header>
+            <nav class="nav-contratar">
+                <a href="#">Actualiza tus datos fiscales</a>
+                <a href="#">Mi Telmex para clientes nuevos</a>
+                <a href="#">Complemento de pago</a>
+                <a href="#">Acceso Único Mi Telmex</a>
+                <a href="#">Canales Digitales de pago</a>
+                <a href="#">Domiciliación de tu recibo</a>
+            </nav>
+        </div>
+        <div class="lista">
+            <article>
+                <ul>
+                    <li>Consulta, paga y descarga tu Recibo Telmex</li>
+                    <li>Domicilia el pago de tu Recibo</li>
+                    <li>Activa Recibo Telmex digital</li>
+                    <li>Paga otras líneas Telmex</li>
+                    <li>Aumenta tu velocidad</li>
+                    <li>Asocia y administra otras líneas Telmex</li>
+                    <li>Contrata y activa servicios </li>
+                    <li>Recarga Tiempo Aire Telcel con cargo a tu Recibo</li>
+                    <li>Personaliza tu módem</li>
+                    <li>Navega con WiFi Móvil en Infinitum</li>
+                    <li>Asistencia y soporte para tu línea o servicio de internet <i class="fa-solid fa-wifi" style="color: #2e7bff;"></i></li>
+                    <li class="quitar-vineta">Además, con los mismos datos de tu cuenta puedes ingresar a la App Telmex y gestionar todos tus servicios desde tu celular.</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+
+
+    <div class="img-comp-container">
+        <div class="img-comp-img">
+            <img src="images/imagen1.jpg" width="400" height="250">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+            <img src="images/imagen2.jpg" width="400" height="250">
+        </div>
+    </div>
+
+    <div class="ancla-1">
+        <a href="#menu">No lo pienses más, ¡Contrata ahora!</a> <br>
+    </div>
+
+    <div class="formulario2-div">
+        <!-- Formulario 2 -->
+        <form action="">
+            <fieldset> <!-- Recuadro -->
+                <legend class="legend-duda-cliente">¿Tienes dudas? ¡Contáctanos!</legend> <!-- Título del Cuadro -->
+
+                <table>
+                    <tr>
+                        <!-- Primera Fila (Título de las Columnas) -->
+                        <td>
+                            <label for="nombre">Nombre(s):</label> <br>
+                            <input type="text" name="nombre" value="" id="nombre"> <br>
+                        </td>
+                        <td>
+                            <label for="apellido-paterno">Apellido Paterno:</label> <br>
+                            <input type="text" name="apellido-paterno" value="" id="apellido-paterno"> <br>
+                        </td>
+                        <td>
+                            <label for="apellido-materno">Apellido Materno:</label> <br>
+                            <input type="text" name="apellido-materno" value="" id="apellido-materno"> <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Segunda Fila -->
+                        <td><br>Ingresa tu correo electrónico</td>
+                        <td><br>
+                            <!-- <label for="correo">Introduce tu correo electrónico:</label> -->
+                            <input type="email" name="correo" id="correo-contratar">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Tercera Fila -->
+                        <td><br>Selecciona tu Estado</td>
+                        <td><br>
+                            <!-- <label for="estado">Selecciona tu Estado</label> -->
+                            <select name="estado" id="estado">
+                                <option value="aguascalientes">Aguascalientes</option>
+                                <option value="baja_california">Baja California</option>
+                                <option value="baja_california_sur">CentroBaja California Sur</option>
+                                <option value="campeche">Campeche</option>
+                                <option value="chiapas">Chiapas</option>
+                                <option value="chihuahua">Chihuahua</option>
+                                <option value="ciudad_de_mexico">Ciudad de México</option>
+                                <option value="coahuila">Coahuila</option>
+                                <option value="colima">Colima</option>
+                                <option value="durango">Durango</option>
+                                <option value="estado_de_mexico">Estado de México</option>
+                                <option value="guanajuato">Guanajuato</option>
+                                <option value="guerrero">Guerrero</option>
+                                <option value="hidalgo">Hidalgo</option>
+                                <option value="jalisco">Jalisco</option>
+                                <option value="michoacan">Michoacán</option>
+                                <option value="morelos">Morelos</option>
+                                <option value="nayarit">Nayarit</option>
+                                <option value="nuevo_leon">Nuevo León</option>
+                                <option value="oaxaca">Oaxaca</option>
+                                <option value="puebla">Puebla</option>
+                                <option value="querétaro">Querétaro</option>
+                                <option value="quintana_roo">Quintana Roo</option>
+                                <option value="san_luis_potosi">San Luis Potosí</option>
+                                <option value="sinaloa">Sinaloa</option>
+                                <option value="sonora">Sonora</option>
+                                <option value="tabasco">Tabasco</option>
+                                <option value="tamaulipas">Tamaulipas</option>
+                                <option value="tlaxcala">Tlaxcala</option>
+                                <option value="veracruz">Veracruz</option>
+                                <option value="yucatan">Yucatán</option>
+                                <option value="zacatecas">Zacatecas</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Cuarta Fila -->
+                        <td><br>Escribe tu duda:</td>
+                        <td><br>
+                            <input list="duda">
+                            <datalist id="duda">
+                                <option value="¿Cuáles son los requisitos de contratación?">
+                                <option value="¿Cuánto tiempo tarda Infinitum en ser activado?">
+                                <option value="¿Cómo funciona Infinitum y en qué se diferencia del Cable?">
+                                <option value="¿Cómo puedo configurar mi módem?">
+                                <option value="¿Qué debo hacer para navegar con mi cuenta de Infinitum en otros lugares?">
+                                <option value="¿Por qué no se envían los mensajes de correo desde una cuenta que no es de Infinitum?">
+                                <option value="¿Puedo instalar Infinitum en una Macintosh o Linux?">
+                            </datalist>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Quinta Fila -->
+                        <td colspan="2"><br>Quiero recibir periódicamente promociones a mi correo&nbsp;&nbsp;
+                            <label class="switch-1">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- Sexta Fila -->
+                        <td><br>
+                            <input type="button" value="Enviar" title="Te llagará la respuesta al correo indicado" id="boton"> 
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div id="servicios">
+            <div class="izquierda">
+                <h4>Suscríbete a nuestras promociones</h4>
+                <div id="suscripcion">
+                    <form>
+                        <input type="text" name="correo" id="correo" placeholder="Ingresa tu correo electrónico">
+                        <input type="button" value="Suscribir" id="btns">
+                    </form>
+                </div>
+            </div>
+
+            <div class="derecha">
+                <div class="col_serv">
+                    <h5>Servicios Telmex</h5>
+                    <ul>
+                        <li><a href="#">Hogar</a></li>
+                        <li><a href="#">Negocio</a></li>
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Centros de Atención Telmex</a></li>
+                        <li><a href="#">Sitios WiFi</a></li>
+                    </ul>
+                </div>
+                <div class="col_serv">
+                    <h5>Educación Digital</h5>
+                    <ul>
+                        <li><a href="#">Académica</a></li>
+                        <li><a href="#">Aldea Digital</a></li>
+                        <li><a href="#">Biblioteca Digital Telmex</a></li>
+                        <li><a href="#">Educación Inicial</a></li>
+                        <li><a href="#">Inttelmex IT</a></li>
+                        <li><a href="#">Telmex Hub</a></li>
+                    </ul>
+                </div>
+                <div class="col_serv">
+                    <h5>Conoce más</h5>
+                    <ul>
+                        <li><a href="#">Acerca de Telmex</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Escuderia Telmex</a></li>
+                        <li><a href="#">Ring Telmex Telcel</a></li>
+                        <li><a href="#">Bolsa de Trabajo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="plataformas">
+            <div id="app">
+                <h4>¡Descarga la app!</h4>
+                <a href="#"><img src="images/playstore.png" alt="Play Store"></a>
+                <a href="#"><img src="images/appstore.svg" alt="App Store"></a>
+            </div>
+
+            <div id="redes">
+                <p>Siguenos: <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-square-facebook" id="face"></i></a> <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-square-twitter" id="twitter"></i></a> <a href="https://www.youtube.com/@telmex" target="_blank"><i class="fa-brands fa-square-youtube" id="yt"></i></a></p>
+            </div>
+        </div>
+
+        <div id="socios">
+            <a href="#"><img src="images/banner-telcel.jpg" alt="Telcel" id="telcel"></a>
+            <div id="space"></div>
+            <a href="#"><img src="images/9Slim_1.jpg" alt="Carlos Slim" id="slim"></a>
+        </div>
+
+        <div id="derechos">
+            <h6>2023 Telmex. Todos los derechos reservados</h6>
+            <p><a href="">Aviso de privacidad</a> | <a href="#">Contrato Marco de prestación de servicios</a> | <a href="#">Oferta de servicios Mayoristas</a> | <a href="#">Contrato Marco y Términos en formato audible</a> | <a href="#">Colaboración con justicia</a> | <a href="#">Mapa de sitio</a> | <a href="#">Declaración de accesibilidad</a></p>
+        </div>
+    </footer>
+
+
+    <!-- script:src -->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+        initComparisons();
+    </script>
+
+    <script>
+        /* Initiate Magnify Function
+        with the id of the image, and the strength of the magnifier glass:*/
+        magnify("myimage", 3);
+    </script>
+
+</body>
+</html>
